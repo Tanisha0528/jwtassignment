@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 @FeignClient("authentication-service/auth")
 public interface AuthenticationConsumer {
 
-    @GetMapping("/get-token/{id}")
+    @GetMapping("/getToken/{id}")
     String createToken(@PathVariable("id") int id);
 
 }
